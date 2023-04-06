@@ -6,6 +6,11 @@ class MultiqueuerController < ApplicationController
 
   def queue
     puts "do the queue stuff"
+
+    queue = params["queue"]
+
+    JobA.set({ queue: queue }).perform_async
+
     redirect_to "/"
   end
 
