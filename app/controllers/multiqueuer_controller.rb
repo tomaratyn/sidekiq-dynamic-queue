@@ -4,4 +4,9 @@ class MultiqueuerController < ApplicationController
     @message = "So many queues!"
   end
 
+  def queue
+    puts "do the queue stuff"
+    redirect_to "/"
+  end
+
 end
