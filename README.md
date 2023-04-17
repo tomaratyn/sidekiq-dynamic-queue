@@ -18,7 +18,7 @@ bundle exec sidekiq -q groupone
 3. Then another terminal to run
 
 ```
-bundle exec sidekiq -q groupone
+bundle exec sidekiq -q grouptwo
 ```
 
 4. run rails in a third terminal:
